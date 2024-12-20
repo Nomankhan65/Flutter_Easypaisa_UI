@@ -1,6 +1,7 @@
 import 'package:easypaisaclone/res/components/menu_column.dart';
 import 'package:easypaisaclone/res/components/payment_container.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeView extends StatelessWidget {
   HomeView({super.key});
@@ -62,7 +63,7 @@ class HomeView extends StatelessWidget {
               width: width * 0.3,
             ),
             Text(
-              'easypaisa',
+              'title'.tr,
               style: TextStyle(color: Colors.white),
             )
           ],
@@ -94,7 +95,7 @@ class HomeView extends StatelessWidget {
           children: [
             Container(
               width: double.infinity,
-              height: height * 0.2,
+              height: height * 0.21,
               color: Colors.green,
               child: Padding(
                 padding: const EdgeInsets.all(20),
@@ -114,7 +115,7 @@ class HomeView extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'easypaisa',
+                              'title'.tr,
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
                             ),
@@ -122,7 +123,7 @@ class HomeView extends StatelessWidget {
                               height: 7,
                             ),
                             Text(
-                              'NOMAN KHAN',
+                              'name'.tr,
                               style: TextStyle(
                                 fontSize: 12,
                               ),
@@ -133,7 +134,7 @@ class HomeView extends StatelessWidget {
                                   fontSize: 17, fontWeight: FontWeight.bold),
                             ),
                             Text(
-                              'Sign in to easypaisa account',
+                              'signin_message'.tr,
                               style: TextStyle(
                                 fontSize: 12,
                               ),
@@ -151,7 +152,7 @@ class HomeView extends StatelessWidget {
                             ),
                             child: Center(
                                 child: Text(
-                              'Sign In',
+                              'signin'.tr,
                               style:
                                   TextStyle(fontSize: 12, color: Colors.white),
                             )),
@@ -168,19 +169,19 @@ class HomeView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 PaymentContainer(
-                    icon: Icon(Icons.send_to_mobile), title: 'Send Money'),
+                    icon: Icon(Icons.send_to_mobile), title: 'send'.tr),
                 PaymentContainer(
                     icon: Icon(Icons.mobile_screen_share_rounded),
-                    title: 'Bill Payment'),
+                    title: 'bill'.tr),
                 PaymentContainer(
-                    icon: Icon(Icons.install_mobile), title: 'Mobile Package')
+                    icon: Icon(Icons.install_mobile), title: 'package'.tr)
               ],
             ),
             SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               child: Text(
-                'More with easypaisa',
+                'more'.tr,
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
@@ -260,54 +261,66 @@ class HomeView extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               child: Text(
-                'Get your easypaisa Debit Card',
+                'get'.tr,
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal:20,vertical:5),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               child: Row(
-                mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     height: height * 0.23,
                     width: width * 0.41,
                     decoration: BoxDecoration(
-                      color: Colors.blueGrey,
+                      color: Colors.teal,
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal:15,vertical:15),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 15),
                       child: Column(
-                        crossAxisAlignment:CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Online Card',
+                            'online'.tr,
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, color: Colors.white,fontSize:16),
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 16),
                           ),
-                          SizedBox(height:15,),
+                          SizedBox(
+                            height: 15,
+                          ),
                           Text(
-                            'Only for Online Payments \nin Pakitsan',
+                            'only'.tr,
                             style: TextStyle(
-                                color: Colors.orangeAccent,fontSize:12),
+                                color: Colors.orangeAccent, fontSize: 12),
                           ),
-                          SizedBox(height:height*0.04,),
+                          SizedBox(
+                            height: height * 0.04,
+                          ),
                           Container(
-                            height:height*0.04,
-                            width:double.infinity,
-                            decoration:BoxDecoration(
-                              borderRadius:BorderRadius.circular(20),
-                              border:Border.all(
-                                color:Colors.greenAccent
-                              )
-                            ),
-                            child:Row(
-                              mainAxisAlignment:MainAxisAlignment.center,
+                            height: height * 0.04,
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(color: Colors.greenAccent)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text('Manage card',style:TextStyle(color:Colors.white),),
-                                SizedBox(width:6,),
-                                Icon(Icons.arrow_forward_outlined,color:Colors.white,)
+                                Text(
+                                  'manage'.tr,
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                SizedBox(
+                                  width: 6,
+                                ),
+                                Icon(
+                                  Icons.arrow_forward_outlined,
+                                  color: Colors.white,
+                                )
                               ],
                             ),
                           )
@@ -323,44 +336,58 @@ class HomeView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal:15,vertical:15),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 15),
                       child: Column(
-                        crossAxisAlignment:CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
-                            mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Plastic Card',
+                                'plastic'.tr,
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold, color: Colors.white,fontSize:16),
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    fontSize: 16),
                               ),
-
-                              Icon(Icons.sim_card,color:Colors.amber,)
+                              Icon(
+                                Icons.sim_card,
+                                color: Colors.amber,
+                              )
                             ],
                           ),
-                          SizedBox(height:15,),
-                          Text(
-                            'Use at any ATM or Shop \nin Pakitsan',
-                            style: TextStyle(
-                                color: Colors.orangeAccent,fontSize:12),
+                          SizedBox(
+                            height: 15,
                           ),
-                          SizedBox(height:height*0.04,),
+                          Text(
+                            'only'.tr,
+                            style: TextStyle(
+                                color: Colors.orangeAccent, fontSize: 12),
+                          ),
+                          SizedBox(
+                            height: height * 0.04,
+                          ),
                           Container(
-                            height:height*0.04,
-                            width:double.infinity,
-                            decoration:BoxDecoration(
-                                borderRadius:BorderRadius.circular(20),
-                                border:Border.all(
-                                    color:Colors.greenAccent
-                                )
-                            ),
-                            child:Row(
-                              mainAxisAlignment:MainAxisAlignment.center,
+                            height: height * 0.04,
+                            width: double.infinity,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(color: Colors.greenAccent)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text('Manage card',style:TextStyle(color:Colors.white),),
-                                SizedBox(width:6,),
-                                Icon(Icons.arrow_forward_outlined,color:Colors.white,)
+                                Text(
+                                  'manage'.tr,
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                SizedBox(
+                                  width: 6,
+                                ),
+                                Icon(
+                                  Icons.arrow_forward_outlined,
+                                  color: Colors.white,
+                                )
                               ],
                             ),
                           )
@@ -372,77 +399,83 @@ class HomeView extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal:20, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Text(
                 'Tap to see whats new',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
             SingleChildScrollView(
-              scrollDirection:Axis.horizontal,
+              scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal:20,vertical:5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     child: Container(
-                      height:height*0.21,
-                      width:width*0.38,
-                      decoration:BoxDecoration(
-                        color:Colors.white,
-                        borderRadius:BorderRadius.circular(20),
-                        border:Border.all(
-                          width:2,
-                          color:Colors.pinkAccent
-                        )
-                      ),
-                      child:Column(
-                        mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+                      height: height * 0.21,
+                      width: width * 0.38,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20),
+                          border:
+                              Border.all(width: 2, color: Colors.pinkAccent)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Icon(Icons.mobile_friendly_rounded,color:Colors.green,size:100,),
+                          Icon(
+                            Icons.mobile_friendly_rounded,
+                            color: Colors.green,
+                            size: 100,
+                          ),
                           Text('Rs. 300 cashback')
                         ],
                       ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal:1,vertical:5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 1, vertical: 5),
                     child: Container(
-                      height:height*0.21,
-                      width:width*0.38,
-                      decoration:BoxDecoration(
-                          color:Colors.white,
-                          borderRadius:BorderRadius.circular(20),
-                          border:Border.all(
-                              width:2,
-                              color:Colors.pinkAccent
-                          )
-                      ),
-                      child:Column(
-                        mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+                      height: height * 0.21,
+                      width: width * 0.38,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20),
+                          border:
+                              Border.all(width: 2, color: Colors.pinkAccent)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Icon(Icons.mobile_friendly_rounded,color:Colors.green,size:100,),
+                          Icon(
+                            Icons.mobile_friendly_rounded,
+                            color: Colors.green,
+                            size: 100,
+                          ),
                           Text('Rs. 300 cashback')
                         ],
                       ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal:20,vertical:5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                     child: Container(
-                      height:height*0.21,
-                      width:width*0.38,
-                      decoration:BoxDecoration(
-                          color:Colors.white,
-                          borderRadius:BorderRadius.circular(20),
-                          border:Border.all(
-                              width:2,
-                              color:Colors.pinkAccent
-                          )
-                      ),
-                      child:Column(
-                        mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+                      height: height * 0.21,
+                      width: width * 0.38,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20),
+                          border:
+                              Border.all(width: 2, color: Colors.pinkAccent)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Icon(Icons.mobile_friendly_rounded,color:Colors.green,size:100,),
+                          Icon(
+                            Icons.mobile_friendly_rounded,
+                            color: Colors.green,
+                            size: 100,
+                          ),
                           Text('Rs. 300 cashback')
                         ],
                       ),
@@ -453,10 +486,118 @@ class HomeView extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal:20, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: Text(
                 'Schedule Your Transactions',
                 style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 2),
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical:5),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      ListTile(
+                        leading: Icon(
+                          Icons.calendar_month,
+                          color: Colors.deepOrange,
+                          size: 50,
+                        ),
+                        title: Text(
+                          'Set payment in advance',
+                          style: TextStyle(fontWeight: FontWeight.bold,fontSize:15),
+                        ),
+                        subtitle: Text(
+                          'Now setup mobile load and package in advance',
+                          style: TextStyle(fontSize:13),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:83),
+                        child: Container(
+                          height:height*0.033,
+                          width:width*0.35,
+                          decoration:BoxDecoration(
+                            borderRadius:BorderRadius.circular(20),
+                            border:Border.all(
+                              color:Colors.black54
+                            ),
+                          ),
+                          child:Row(
+                            mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text('Schedule Payments',style:TextStyle(fontSize:11),),
+                              Icon(Icons.arrow_forward,color:Colors.green,size:20,)
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 10,)
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical:10),
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical:5),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      ListTile(
+                        leading: Icon(
+                          Icons.support_agent_sharp,
+                          color: Colors.green,
+                          size: 50,
+                        ),
+                        title: Text(
+                          'Help & Customer Support',
+                          style: TextStyle(fontWeight: FontWeight.bold,fontSize:15),
+                        ),
+                        subtitle: Text(
+                          'Now setup mobile in advance register a complain or get quick response',
+                          style: TextStyle(fontSize:13),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left:83),
+                        child: Container(
+                          height:height*0.033,
+                          width:width*0.22,
+                          decoration:BoxDecoration(
+                            borderRadius:BorderRadius.circular(20),
+                            border:Border.all(
+                                color:Colors.black54
+                            ),
+                          ),
+                          child:Row(
+                            mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text('Get Help',style:TextStyle(fontSize:11),),
+                              Icon(Icons.arrow_forward,color:Colors.green,size:20,)
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 10,)
+                    ],
+                  ),
+                ),
               ),
             ),
           ],

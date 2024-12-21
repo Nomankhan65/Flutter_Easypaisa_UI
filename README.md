@@ -1,16 +1,8 @@
 # easypaisaclone
 
-A new Flutter project.
+A new Flutter project EasyPaisa UI Clone.
+Images:
+![image](https://github.com/user-attachments/assets/33e07728-4815-42ee-9bdc-62b22d8399db)
+![image](https://github.com/user-attachments/assets/bfe88d3b-0f54-4545-9aa6-cd5d582e92cd)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ 
